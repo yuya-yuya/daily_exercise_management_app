@@ -8,6 +8,7 @@ Things you may want to cover:
 * Ruby version
 
 * System dependencies
+- react-rails
 
 * Configuration
 
