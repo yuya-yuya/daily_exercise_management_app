@@ -1,0 +1,9 @@
+version: "2"
+
+syncs:
+  sync-volume:
+    src: './sync/'
+    sync_host_ip: '127.0.0.1'
+    sync_host_port: '3000'
+    sync_strategy: 'unison'
+    sync_excludes: ['node_modules', '.git']
