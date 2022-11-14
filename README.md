@@ -2,8 +2,13 @@
 
 * Ruby version
 
-* System dependencies
-  - react-rails
+* Dependencies
+  - Ruby '3.0.3'
+    - Ruby on Rails '~> 6.1.7'
+    - react-rails
+  - Docker
+    - Docker sync
+  - MySQL
 
 * Configuration
 
