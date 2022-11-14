@@ -3,7 +3,7 @@
 * Ruby version
 
 * System dependencies
-react-rails
+- react-rails
 
 * Configuration
 
