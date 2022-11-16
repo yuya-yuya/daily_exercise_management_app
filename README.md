@@ -3,7 +3,7 @@
 * Ruby version
 
 * Dependencies
-  - Ruby '3.0.3'
+  - Ruby '2.7.6'
     - Ruby on Rails '~> 6.1.7'
     - react-rails
   - Docker
