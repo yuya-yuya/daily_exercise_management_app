@@ -1,0 +1,19 @@
+          ok  Starting native_osx for sync sync-volume
+          ok  sync-volume container still running, restarting unison in container
+unix:///tmp/supervisor.sock no such file
+/Users/yamadayuuwataru/.gem/ruby/2.7.0/gems/docker-sync-1.0.5/lib/docker-sync/sync_strategy/native_osx.rb:105:in `start_container': Start failed (RuntimeError)
+	from /Users/yamadayuuwataru/.gem/ruby/2.7.0/gems/docker-sync-1.0.5/lib/docker-sync/sync_strategy/native_osx.rb:112:in `run'
+	from /Users/yamadayuuwataru/.gem/ruby/2.7.0/gems/docker-sync-1.0.5/lib/docker-sync/sync_process.rb:85:in `run'
+	from /Users/yamadayuuwataru/.gem/ruby/2.7.0/gems/docker-sync-1.0.5/lib/docker-sync/sync_manager.rb:111:in `block in run'
+	from /Users/yamadayuuwataru/.gem/ruby/2.7.0/gems/docker-sync-1.0.5/lib/docker-sync/sync_manager.rb:110:in `each'
+	from /Users/yamadayuuwataru/.gem/ruby/2.7.0/gems/docker-sync-1.0.5/lib/docker-sync/sync_manager.rb:110:in `run'
+	from /Users/yamadayuuwataru/.gem/ruby/2.7.0/gems/docker-sync-1.0.5/tasks/sync/sync.thor:51:in `block in start'
+	from /Users/yamadayuuwataru/.gem/ruby/2.7.0/gems/docker-sync-1.0.5/tasks/sync/sync.thor:50:in `chdir'
+	from /Users/yamadayuuwataru/.gem/ruby/2.7.0/gems/docker-sync-1.0.5/tasks/sync/sync.thor:50:in `start'
+	from /Users/yamadayuuwataru/.rbenv/versions/2.7.6/lib/ruby/gems/2.7.0/gems/thor-1.2.1/lib/thor/command.rb:27:in `run'
+	from /Users/yamadayuuwataru/.rbenv/versions/2.7.6/lib/ruby/gems/2.7.0/gems/thor-1.2.1/lib/thor/invocation.rb:127:in `invoke_command'
+	from /Users/yamadayuuwataru/.rbenv/versions/2.7.6/lib/ruby/gems/2.7.0/gems/thor-1.2.1/lib/thor.rb:392:in `dispatch'
+	from /Users/yamadayuuwataru/.rbenv/versions/2.7.6/lib/ruby/gems/2.7.0/gems/thor-1.2.1/lib/thor/base.rb:485:in `start'
+	from /Users/yamadayuuwataru/.gem/ruby/2.7.0/gems/docker-sync-1.0.5/bin/docker-sync:14:in `<top (required)>'
+	from /Users/yamadayuuwataru/.rbenv/versions/2.7.6/bin/docker-sync:23:in `load'
+	from /Users/yamadayuuwataru/.rbenv/versions/2.7.6/bin/docker-sync:23:in `<main>'

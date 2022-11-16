@@ -1,13 +1,18 @@
-FROM ruby:alpine3.13
-RUN apk update \
-      && apk add --no-cache gcc make libc-dev g++ mariadb-dev tzdata nodejs~=14 yarn
+FROM ruby:2.7.6-alpine3.15
+
 WORKDIR /myapp
-COPY Gemfile .
-COPY Gemfile.lock .
-RUN bundle install --jobs=2
-COPY . /myapp
+COPY Gemfile* /myapp/
+
+RUN apk update && \
+    apk upgrade && \
+    apk add --no-cache linux-headers libxml2-dev make gcc libc-dev nodejs yarn tzdata bash mysql-dev && \
+    apk add --no-cache -t .build-packages --no-cache build-base curl-dev mysql-client && \
+    bundle install -j4 && \
+    apk del --purge .build-packages
+
 COPY entrypoint.sh /usr/bin/
 RUN chmod +x /usr/bin/entrypoint.sh
 ENTRYPOINT ["entrypoint.sh"]
 EXPOSE 3000
-CMD ["bundle", "exec", "rails", "server", "-b", "0.0.0.0"]
+
+CMD ["rails", "server", "-b", "0.0.0.0"]
