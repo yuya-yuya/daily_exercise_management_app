@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   draw :crm
 
-  devise_for :users, skip: :registrations, controllers: {
+  devise_for :users, module: :devise, skip: :registrations, controllers: {
     sessions: 'sessions',
     passwords: 'passwords',
     confirmations: 'confirmations'
